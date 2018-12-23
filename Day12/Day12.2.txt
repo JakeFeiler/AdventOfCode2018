@@ -1,0 +1,6 @@
+How to solve part 2:
+
+Note that beginning with generation 195, every successive generation increases its value by a constant of 53.
+Generation 195 has a value of 11697.
+Therefore, after 50,000,000,000 generation have elapsed, the correct value will be:
+(50,000,000,000-195)*53 + 11697 = 2650000001362
