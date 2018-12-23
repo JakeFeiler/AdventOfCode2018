@@ -27,7 +27,6 @@ def compute_generations(initial_state, lines, iters):
     configuration = '.'*extra_pots + initial_state + '.'*extra_pots
     #Note that '.....' => '.', so we don't need to search too far immediately
     for generation in range(iters):
-        print(generation, sum_pots(configuration, extra_pots))
         #Every generation, check the status of possibly affected pots, and update the configuration
         new_state = ''
         for pot in range(-2 - generation*2, initial_length + 2 + 2*generation):
@@ -49,7 +48,7 @@ def sum_pots(configuration, extra_pots):
 
 def main():
     initial_state, lines = get_text('input.txt')
-    generations = 1000
+    generations = 20
     print(compute_generations(initial_state, lines, generations))
 
 if __name__ == "__main__":
