@@ -1,8 +1,6 @@
-#!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
+#!/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
 
 import sys
-
-
 
 def sumInput(text):
     f =  open(text, 'r')
@@ -18,4 +16,8 @@ def sumInput(text):
     f.close()
     return sum
 
-print(sumInput('input.txt'))
+def main():
+    print(sumInput('input.txt'))
+
+if __name__ == "__main__":
+    main()
